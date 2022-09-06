@@ -1,0 +1,38 @@
+h1, p, .divButton {
+    text-align: center;
+}
+
+h1 {
+    padding: 20px 20px 0 20px;
+}
+
+p {
+    padding-bottom: 30px;
+}
+
+form {
+    width: 370px;
+    margin: auto;
+    text-align: left;
+}
+
+.bigDivInput {
+    border: 3px;
+    padding: 0 20px 20px 20px;
+}
+
+.littleDivInput {
+    float: left;
+    margin: 10px;
+    width: 310px;
+    border: 2px;
+}
+
+.realInput {
+    width: 310px;
+}
+
+#error {
+    margin: auto;
+    text-align: center;
+}

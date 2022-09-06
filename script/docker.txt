@@ -1,0 +1,32 @@
+user: root
+password: password
+port: 3306
+
+--> Télécharger la base de données "MariaDB":
+	docker pull mariadb
+
+--> Installer la base de données:
+	docker run --detach --name maria_database --env MARIADB_ROOT_PASSWORD=password -p 3306:3306 mariadb
+
+--> Eteindre la base de données:
+	docker stop maria_database
+
+--> Allumer la base de données:
+	docker start maria_database
+
+--> application.yml
+	spring:
+	  datasource:
+	    url: jdbc:mariadb://localhost:3306/childdb?user=root&password=password
+	    driverClassName: org.mariadb.jdbc.Driver
+
+--> pom.xml
+	<dependency>
+	    <groupId>org.springframework.boot</groupId>
+	    <artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+
+	<dependency>
+	    <groupId>org.mariadb.jdbc</groupId>
+	    <artifactId>mariadb-java-client</artifactId>
+	</dependency>

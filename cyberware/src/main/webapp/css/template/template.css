@@ -1,0 +1,48 @@
+@font-face {
+    font-family: BlenderProBook;
+    src: url("../font/Blender-Pro-Book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BlenderProBold;
+    src: url("../font/Blender-Pro-Bold.otf") format("opentype");
+}
+
+div {
+    font-family: BlenderProBook;
+}
+
+.divNavBar, .divContainer {
+    height: 74px;
+}
+
+.divNavBar {
+    padding: 0;
+    font-size: larger;
+}
+
+.imgCyberware {
+    height: 48px;
+    width: 227px;
+}
+
+.imgLanguage {
+    height: 40px;
+    width: 50px;
+    padding-right: 10px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#content-wrap {
+    padding-bottom: 4.5rem;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
